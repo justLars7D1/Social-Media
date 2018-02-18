@@ -27,7 +27,9 @@ if (!isset($_SESSION['user'])) {
 		<span id="navHome">Home</span>
 		<span id="navChallenges">Challenges</span>
 		<span id="navSearch">Search <i class="fa fa-search-plus" aria-hidden="true"></i></span>
-		<span id="navProfile">Profile</span>
+      <?php
+        echo '<span id="navProfile"><a href="./profile.php?name='.$_SESSION['user']['user_uid'].'" style="text-decoration:none;">Profile</a></span>';
+      ?>
 		<span id="navLogout">Logout</span>
 	</div>
 	<div id="uploadsDisplay">
