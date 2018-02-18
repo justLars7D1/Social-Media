@@ -1,0 +1,60 @@
+/* | Actual CSS, not W3 Library | */
+
+#bg-img {
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+
+}
+
+#info {
+
+	background-color: white;
+	border-radius: 1vw;
+
+}
+
+.errorMsg:empty {
+
+	display: none;
+
+}
+
+.errorMsg {
+
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color: #f44336;
+	width: 100vw;
+	height: 8vh;	
+	font-size: 2.5vh;
+
+}
+
+@media screen and (orientation:portrait) {
+
+	#bg-img {
+
+		width: 200vw;
+		height: 100vh;
+		position: fixed;
+		left: -50vw;
+
+	}
+
+}
+
+
+@media screen and (max-width:500px) {
+
+	#info {
+
+	background-color: white;
+	border-radius: 1vw;
+	width: 85vw;
+
+	}
+
+}

@@ -1,0 +1,168 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+body {
+  overflow:hidden;
+}
+
+/* Navbar */
+#navbar {
+  z-index:100;
+	position: fixed;
+	height: 7.5vh;
+	width: 100vw;
+	background-color: #009688;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2vw;
+	color: white;
+	padding-left: 1vw;
+	padding-top: 0.5vh;
+}
+
+#navChallenges {
+	margin-left: 1vw;
+}
+
+#navSearch {
+	margin-left: 1vw;
+}
+
+#navProfile {
+	margin-left:64.25vw;
+}
+
+#navLogout {
+	margin-left: 1vw;
+}
+
+#navHome:hover, #navChallenges:hover, #navSearch:hover, #navProfile:hover, #navLogout:hover {
+	cursor: pointer;
+	color: #303030;
+}
+
+/* Left slider */
+#profileSlider {
+  position: fixed;
+  top:7.5vh;
+  height: 92.5vh;
+  width: 35vw;
+  background-color: #CCCCCC;
+}
+
+#profileImage {
+  position: relative;
+  top: 5vh;
+  left: 4.5vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius:10vw;
+}
+
+#username {
+  position: fixed;
+  top: 12vh;
+  left: 17vw;
+}
+
+#user_tag {
+  color: #686868;
+  position: fixed;
+  top: 18vh;
+  left: 16.75vw;
+}
+
+#followers {
+  position: relative;
+  top: -2vh;
+  left: 16.75vw;
+  width: 6vw;
+  height: 5vh;
+  border-radius:0.5vw;
+  padding-top:0.01vh;
+  background-color: rgba(0, 150, 136, 0.75);
+  text-align: center;
+}
+
+#following {
+  position: relative;
+  top: -7vh;
+  left: 24vw;
+  width: 6vw;
+  height: 5vh;
+  border-radius:0.5vw;
+  padding-top:0.01vh;
+  background-color: rgba(0, 150, 136, 0.75);
+  text-align: center;
+}
+
+.level {
+  position: relative;
+  left:4.5vw;
+  width: 6vw;
+  height: 5vh;
+  border-radius:0.5vw;
+  padding-top:0.01vh;
+  text-align: center;
+}
+
+.meter {
+  position: relative;
+  top:-1.5vh;
+  height:1.5vh;
+  left:11vw;
+  width: 22.5vw;
+  border-radius:0.2vw;
+}
+
+.expProgress {
+  position: relative;
+  top:-7.5vh;
+  height:1.5vh;
+  left:18.5vw;
+}
+
+#profileDesc {
+  position: relative;
+  left: 4vw;
+  text-align: center;
+  width:30vw;
+}
+
+#profileTag {
+  background-color:#C4C4C4;
+  position: relative;
+  left: 7.5vw;
+  top:1vh;
+  padding-top:0.0075vh;
+  color:darkred;
+  text-align:center;
+  height: 6vh;
+  width: 20vw;
+}
+
+#hideProfile {
+  width: 35vw;
+  height: 10vh;
+  position: fixed;
+  top: 92.5vh;
+  background-color:rgba(0,145,130,0.5);
+  text-align:center;
+}
+
+#uploads {
+  padding: 12.5vh 5vw 12.5vw 10vw;
+  overflow-y:scroll;
+  width: 65vw;
+  height: 92.5vh;
+  position: fixed;
+  top:7.5vh;
+  left: 35vw;
+}
+
+.upload {
+  width:20vw;
+  height:25vh;
+  margin: 0 2vw 4vw 2vw;
+}
