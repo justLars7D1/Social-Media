@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 18 feb 2018 om 20:23
+-- Gegenereerd op: 19 feb 2018 om 17:25
 -- Serverversie: 10.1.25-MariaDB
 -- PHP-versie: 7.1.7
 
@@ -53,7 +53,13 @@ CREATE TABLE `uploads` (
 --
 
 INSERT INTO `uploads` (`upload_id`, `user_id`, `upload_name`, `upload_time`, `random`) VALUES
-(2, 1, '5a8897088201a6.30599807.jpg', '2018-02-17 21:56:40', '5a89b348566cd5.20433354');
+(2, 1, '5a8897088201a6.30599807.jpg', '2018-02-17 21:56:40', '5a8af86752aa42.73901761'),
+(3, 1, '5a8af4ac072fc3.11577575.png', '2018-02-19 17:00:44', '5a8af86752aa42.73901761'),
+(4, 1, '5a8af796c09ee3.99685715.jpg', '2018-02-19 17:13:10', '5a8af86752aa42.73901761'),
+(5, 1, '5a8af799476692.56772756.jpg', '2018-02-19 17:13:13', '5a8af86752aa42.73901761'),
+(6, 1, '5a8af79b94f280.97035058.jpg', '2018-02-19 17:13:15', '5a8af86752aa42.73901761'),
+(7, 1, '5a8af79e2b7f85.15532694.jpg', '2018-02-19 17:13:18', '5a8af86752aa42.73901761'),
+(9, 1, '5a8af806ef6039.49587501.jpg', '2018-02-19 17:15:02', '5a8af86752aa42.73901761');
 
 -- --------------------------------------------------------
 
@@ -73,7 +79,14 @@ CREATE TABLE `upload_geo` (
 
 INSERT INTO `upload_geo` (`upload_id`, `geo_enabled`, `address`) VALUES
 (1, 'false', ''),
-(2, 'true', 'Heerlen, Nederland');
+(2, 'true', 'Poop, Yuc., Mexico'),
+(3, 'false', ''),
+(4, 'false', ''),
+(5, 'false', ''),
+(6, 'false', ''),
+(7, 'false', ''),
+(8, 'false', ''),
+(9, 'false', '');
 
 -- --------------------------------------------------------
 
@@ -142,15 +155,16 @@ CREATE TABLE `user_info` (
   `user_tag` text NOT NULL,
   `user_special_tag` text NOT NULL,
   `user_total_exp` int(11) NOT NULL,
-  `user_profile_desc` varchar(200) NOT NULL
+  `user_profile_desc` varchar(200) NOT NULL,
+  `user_profile_profile_type` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_info`
 --
 
-INSERT INTO `user_info` (`user_id`, `user_profile_image`, `user_tag`, `user_special_tag`, `user_total_exp`, `user_profile_desc`) VALUES
-(1, '5a8897088201a6.30599807.jpg', 'Known Person', 'CEO at Meet Inc.', 0, 'Hi, I am Lars Quaedvlieg, founder and CEO of Meet. Meet is social media website like Instagram, but we edit our content to your likings. We have also added challenges for fun! I hope to see you around');
+INSERT INTO `user_info` (`user_id`, `user_profile_image`, `user_tag`, `user_special_tag`, `user_total_exp`, `user_profile_desc`, `user_profile_profile_type`) VALUES
+(1, '5a8af16694d214.47231091.jpg', 'Fancy boii', 'CEO at Meet Inc.', 5629999, 'Hi, I am Lars Quaedvlieg, founder and CEO of Meet. Meet is social media website like Instagram, but we edit our content to your likings. We have also added challenges for fun! I hope to see you around', 1);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -205,12 +219,12 @@ ALTER TABLE `forgot_password`
 -- AUTO_INCREMENT voor een tabel `uploads`
 --
 ALTER TABLE `uploads`
-  MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT voor een tabel `upload_likes`
 --
 ALTER TABLE `upload_likes`
-  MODIFY `like_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `like_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT voor een tabel `users`
 --
