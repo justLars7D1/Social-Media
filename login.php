@@ -36,7 +36,7 @@ if (!empty($_SESSION['user'])) {
 <script src="./js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="./js/login.js"></script>
 <body>
-<img src="./images/background-login3.jpg" id="bg-img" alt="The background image couldn't load...">
+<img src="./images/background-login1.jpg" id="bg-img" alt="The background image couldn't load...">
 <?php
 
 if (!empty($_SESSION['correctVerificationCode'])) {
